@@ -1,0 +1,41 @@
+KIỂM TRA HS2 CISCO CA SÁNG 4
+
+CÂU 1 (1.0đ). CORE SW Cấp DHCP cho các VLAN 10,20,30 
+- VLAN 10: 192.168.10.0/ IP VLAN 10: 192.168.10.10 
+- VLAN 20: 192.168.20.0/ IP VLAN 20: 192.168.20.10
+- VLAN 30: 192.168.30.0/ IP 192.168.30.10
+- Mỗi Scope có DNS: 8.8.8.8
+Default Route tại R1: 
+  VLAN 10: 192.168.10.1 --> f0/0.1
+  VLAN 20: 192.168.20.1 --> f0/0.2
+  VLAN 30: 192.168.30.1 --> f0/0.3
+Excludsive cho tất cả loại trừ 192.168.x.1 --> 192.168.x.10
+---------------------------
+CÂU 2 (0.5đ). Router R1 đặt các loại mật khẩu đã học và có mã hóa,
+ yêu cầu máy H3 telnet được vào R1 với user name root, pass susu123
+--------------------------
+CÂU 3 (1.5đ). ISP-A, ISP-B cấu hình PPPoE hoặc PPP chứng thực đăng nhập cho HSRP_A,
+ HSRP_B với user u1, u2 pass @123456 [LÀM KHÔNG ĐƯỢC BỎ MẤT 1.5 điểm) 
+---------------------------
+CÂU 4 (1.0đ). Các Router cấu hình định tuyến theo yêu cầu (có authentication )
+----------------------------
+CÂU 5 (0.5đ). Các Router thuộc VDC: ISP-A, ISP-B, HSRP-A, HSRP-B đồng bộ thời gian tại VDC-NTP
+--------------------------
+CÂU 6 (0.5đ). Tất các các máy tại R1 ping được Router GG: 8.8.8.8 và truy cập được máy chủ DNS 172.16.0.200
+---------------------------
+CÂU 7. Tạo các ACL như sau (1.5 đ): 
+a) Tại nhóm R1 tất cả các máy chỉ được truy cập WEB-XYZ và TFTP;
+b) Cấu hình NAT tại Google sao cho khi ping 172.16.0.200 trả về IP là 8.8.8.8
+c) Cấu hình NAT sao cho máy 172.16.0.200 cho phép NAT dịch vụ DNS hoặc WEB ra ngoải INTERNET
+-------------------------
+CÂU 8 (0.5đ). Backup cấu hình của R1 lưu sang TFTP 
+
+3.0 ĐIỂM TRÌNH DIỄN
+- Vấn đáp thao tác
+- Mỗi em sẽ được hỏi 2 câu, qua được câu 1 thì mới tới câu 2
+--------------------------
+KIỂM TRA LẠI VÀO BUỔI HỌC KẾ TIẾP (LẦN CUỐI CÙNG)
+* Không có 3đ trình diễn
+- MPLS
+- VPN
+- NAT Overload
